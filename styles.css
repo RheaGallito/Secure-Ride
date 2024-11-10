@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  body {
+    background-color: #9BBAD3;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+ 
+  .login-container {
+    text-align: center;
+    width: 300px;
+  }
+  
+ 
+  .header {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+
+  .highlight {
+    color: #4A90E2;
+  }
+  
+ 
+  .logo img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+ 
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+
+  .forgot-password {
+    color: #333;
+    font-size: 12px;
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  .login-btn {
+    background-color: #9BBAD3;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+  .signup {
+    color: #333;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  
+  .signup-btn {
+    color: #4A90E2;
+    text-decoration: none;
+    border: 1px solid #4A90E2;
+    padding: 2px 5px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+body {
+  background-color: #9BBAD3;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.container {
+  text-align: center;
+  width: 300px;
+}
+
+
+h1 {
+  font-size: 36px;
+  color: black;
+  
+}
+
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #D3D3D3;
+}
+
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+.add-photo {
+  margin-top: 10px;
+  font-size: 14px;
+  color: black;
+  background-color: #D3D3D3;
+  border: 1px solid black;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid black;
+  background-color: #D3D3D3;
+  color: black;
+}
+
+
+.register-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #D3D3D3;
+  border: 1px solid black;
+  color: black;
+  cursor: pointer;
+}
+
+.sign-in-link {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 14px;
+  color: black;
+  background-color: #D3D3D3;
+  border: 1px solid black;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+
+body {
+  background-color: #a3c1da;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 300px;
+}
+
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+  margin: 20px auto;
+}
+
+
+.profile-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.section {
+  margin-bottom: 20px;
+}
+
+
+.section img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.menu {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #d3d3d3;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+
+.menu i {
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #333;
+}
+
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.map {
+  width: 100%;
+  height: 80%;
+  background: url('https://placehold.co/300x500') no-repeat center center;
+  background-size: cover;
+}
+
+
+.location {
+  width: 100%;
+  background-color: #90CAF9;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.location h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #000;
+}
+
+
+.location p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #000;
+}
+
+
+.location p i {
+  margin-right: 5px;
+}
+
+
+.footer {
+  width: 100%;
+  background-color: #BDBDBD;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer i {
+  font-size: 20px;
+  color: #000;
+  margin-left: 10px;
+}
