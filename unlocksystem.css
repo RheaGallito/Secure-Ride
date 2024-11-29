@@ -1,0 +1,59 @@
+
+body {
+    background-color: #b0c4de;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    right: 100px;
+}
+.lock-system {
+    background-color: #b0c4de;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.lock-system h1 {
+    font-size: 24px;
+    color: #000;
+}
+.lock-icon {
+    font-size: 100px;
+    color: #4b4b4b;
+}
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button.locked {
+    background-color: #669ACC;
+    color: #fff;
+}
+.button.unlocked {
+    background-color: #add8e6;
+    color: #000;
+}
+.instructions {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #000;
+}
+.footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+}

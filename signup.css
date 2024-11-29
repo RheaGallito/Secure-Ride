@@ -38,13 +38,9 @@ body {
   }
   
   .add-photo {
-    margin-top: 10px;
-    font-size: 14px;
-    color: black;
-    background-color: #d3d3d3;
-    border: 1px solid black;
-    padding: 5px 10px;
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    
   }
   
   .input-field {
