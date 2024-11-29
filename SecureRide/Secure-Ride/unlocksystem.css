@@ -1,0 +1,118 @@
+
+body {
+    background-color: #b0c4de;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    right: 100px;
+}
+.lock-system {
+    background-color: #b0c4de;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.lock-system h1 {
+    font-size: 24px;
+    color: #000;
+}
+.lock-icon {
+    font-size: 100px;
+    color: #4b4b4b;
+}
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button.locked {
+    background-color: #669ACC;
+    color: #fff;
+}
+.button.unlocked {
+    background-color: #add8e6;
+    color: #000;
+}
+.instructions {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #000;
+}
+.footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+}
+.menu {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.menu i {
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    top: 0;
+    right: 0;
+    
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #1F1E4A;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    /*font-size: 28px*/
+    font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    
+  }
+  .sidebar { 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
