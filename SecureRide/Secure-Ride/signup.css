@@ -1,0 +1,77 @@
+
+body {
+    background-color: #9bbad3;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    width: 300px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    color: black;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d3d3;
+  }
+  
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .add-photo {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    background-color: #d3d3d3;
+    color: black;
+  }
+  
+  .register-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #d3d3d3;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .sign-in-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 14px;
+    color: black;
+    background-color: #d3d3d3;
+    border: 1px solid black;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  
+
+  

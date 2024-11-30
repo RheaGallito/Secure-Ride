@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="unlocksystem.css">
+</head>
+<body>
+    <div class="container">
+        <div class="lock-system">
+            <h1>Lock System</h1>
+            <div class=""><img src="asset/Group 24 (1).png" alt="" srcset=""></div>
+            <button class="button locked">UNLOCK</button>
+            <div class="instructions">
+                Click to get notifications.<br>
+            </div>
+            <div class="menu">
+                    
+<!-- Trigger/Open The Modal -->
+
+                <button id="myBtn"><img src="asset/Settings.png" alt=""></button>
+            </div>
+
+        </div>
+    </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <!-- <span class="close">&times;</span> -->
+    <div class="sidebar">
+        <div class="logout" style="color: white;">LOG OUT</div>
+        <button>DB</button>
+        <button>GPS</button>
+        <button>LS</button>
+        <button>BU</button>
+        <div class="settings">
+            <button class="close"><img src="asset/Settings.png" alt=""></button>
+        </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+</body>
+</html>
