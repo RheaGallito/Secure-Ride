@@ -37,12 +37,8 @@
             cursor: pointer;
         }
         .button.locked {
-            background-color: #4b4b4b;
-            color: #fff;
-        }
-        .button.unlocked {
             background-color: #add8e6;
-            color: #000;
+            color: #fff;
         }
         .instructions {
             margin-top: 20px;
@@ -70,3 +66,53 @@
             font-size: 20px;
             margin: 0 5px;
         }
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            top: 0;
+            right: 0;
+            
+          }
+          
+          /* Modal Content */
+          .modal-content {
+            background-color: #1F1E4A;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+          }
+        
+          /* The Close Button */
+          .close {
+            color: #aaaaaa;
+            float: right;
+            /*font-size: 28px*/
+            font-weight: bold;
+            position: absolute;
+            bottom: 20px;
+            right: 15px;
+            background-color: #d3d3d3;
+            border-radius: 5px;
+            padding: 5px;
+          }
+          
+          .close:hover,
+          .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            
+          }
+          .sidebar { 
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+          }
+          .sidebar button{
+            width: 70px;
+          }
+          .sidebar button:hover{
+            cursor: pointer;
+          }
