@@ -3,37 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Google Map Embed</title>
     <link rel="stylesheet" href="gps.css" />
+    <title>gps</title>
+    <style>
+      #google-map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
-    <div class="container">
-      <!-- Google Map Embed -->
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed/v1/view?key=YOUR_API_KEY&center=14.2361,122.9950&zoom=12&maptype=satellite"
-          width="100%"
-          height="100%"
-          frameborder="0"
-          style="border: 0"
-          allowfullscreen=""
-          aria-hidden="false"
-          tabindex="0"
-        ></iframe>
-      </div>
-
-      <div class="location">
-        <h2>Location</h2>
-        <p>
-          <i class="fas fa-map-marker-alt"></i> Don Pedro Celdran Avenue Iligan
-          City
-        </p>
-      </div>
-
-      <div class="footer">
-        <i class="fas fa-bars"></i>
-        <i class="fas fa-cog"></i>
-      </div>
+    <!-- Main -->
+    <div class="main">
+      <div id="google-map"></div>
+      <div class="menu">          
+        <!-- Trigger/Open The Modal -->
+                        <button id="myBtn"><img src="asset/Settings.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+        
+          <!-- Modal content -->
+          <div class="modal-content">
+            <!-- <span class="close">&times;</span> -->
+           <div class="sidebar">
+            <a href="login.html"><div class="logout" style="color: white;">LOG OUT</div></a>
+               <a href="dashboard.html"><button>DB</button></a> 
+               <a href="gps.html"><button>GPS</button></a>
+               <a href="unlocksystem.html"><button>LS</button></a> 
+               <a href="battery.html"><button>BU</button></a>
+                <div class="settings">
+                    <button class="close"><img src="asset/Settings.png" alt=""></button>
+                </div>
+            </div>
+          </div>
+        
+        </div>
     </div>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmh-pcpv4hxjsYcfuND58A24aVjSLQ2Nc&callback=initMap"
+    ></script>
+    <script src="gps.js"></script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+      
+      // Get the button that opens the modal
+      var btn = document.getElementById("myBtn");
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks the button, open the modal 
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
   </body>
 </html>
