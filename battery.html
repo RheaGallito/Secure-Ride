@@ -1,50 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <html>
-        <head>
-            <title>Battery Update</title>
-            <style>
-                </style>
-    <link rel="stylesheet" href="battery.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battery Update</title>
+  <link rel="stylesheet" href="battery.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class="container">
-        <div class="title">Battery Update</div>
-        <div class="battery-status">100%</div>
-        <div style="display: flex; align-items: center;">
-        <div class="battery-levels">
-            <div>
-                <div class="level very-good"></div>
-                <span>Very Good</span>
-            </div>
-            <div>
-                <div class="level good"></div>
-                <span>Good</span>
-            </div>
-            <div>
-                <div class="level low"></div>
-                <span>Low</span>
-            </div>
-            <div>
-                <div class="level critical"></div>
-                <span>Critical</span>
-            </div>
+  <div class="container">
+    <div class="title">Battery Update</div>
+    <div class="battery-status">100%</div>
+    <div style="display: flex; align-items: center;">
+      <div class="battery-levels">
+        <div>
+          <div class="level very-good"></div>
+          <span>Very Good</span>
         </div>
-        <div class="battery-image">
-            <div class="top"></div>
-            <div class="level very-good"></div>
-            <div class="level good"></div>
-            <div class="level low"></div>
-            <div class="level critical"></div>
+        <div>
+          <div class="level good"></div>
+          <span>Good</span>
         </div>
-    </div>
-        <div class="notification">
-            Click to get Push Notifications<br>
-            It Provides notification when it reaches the specific level.
+        <div>
+          <div class="level low"></div>
+          <span>Low</span>
         </div>
+        <div>
+          <div class="level critical"></div>
+          <span>Critical</span>
+        </div>
+      </div>
+      <div class="battery-image">
+        <div class="top"></div>
+        <div class="level very-good"></div>
+        <div class="level good"></div>
+        <div class="level low"></div>
+        <div class="level critical"></div>
+      </div>
     </div>
-    <div class="settings">
-        <img src="asset/list-setting.png" alt="">
+    <div class="notification">
+      Click to get Push Notifications<br>
+      It Provides notification when it reaches the specific level.
     </div>
+  </div>
+
+  <div class="menu">
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn"><img src="asset/Settings.png" alt=""></button>
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="sidebar">
+        <a href="login.html"><div class="logout" style="color: white;">LOG OUT</div></a>
+        <a href="dashboard.html"><button>DB</button></a> 
+        <a href="gps.html"><button>GPS</button></a>
+        <a href="unlocksystem.html"><button>LS</button></a> 
+        <a href="battery.html"><button>BU</button></a>
+        <div class="settings">
+          <button class="close"><img src="asset/Settings.png" alt=""></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
