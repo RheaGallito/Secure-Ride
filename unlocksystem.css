@@ -116,3 +116,9 @@ body {
     flex-direction: column;
     justify-content: space-around;
   }
+  .sidebar button{
+    width: 70px;
+  }
+  .sidebar button:hover{
+    cursor: pointer;
+  }
