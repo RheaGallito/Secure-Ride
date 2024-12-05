@@ -56,3 +56,50 @@ body {
   font-size: 20px;
   margin: 0 5px;
 }
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  top: 0;
+  right: 0;
+  
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #1F1E4A;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  /*font-size: 28px*/
+  font-weight: bold;
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  background-color: #d3d3d3;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+.sidebar { 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
