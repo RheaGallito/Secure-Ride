@@ -16,14 +16,33 @@
     <div class="logo">
       <img alt="Lock icon with a bicycle inside" src="asset/Rectangle 64.png"/>
     </div>
-    <input class="input-field" type="text" placeholder="Username"/>
-    <input class="input-field" type="password" placeholder="Password"/>
+    <input class="input-field" id="login-username" type="text" placeholder="Username"/>
+    <input class="input-field" id="login-password" type="password" placeholder="Password"/>
     <a href="#" class="forgot-password">Forgot Password</a>
-    <a href="dashboard.html"><button class="login-btn">LOGIN</button></a>
+    <button class="login-btn" id="login-btn">LOGIN</button>
     <div class="signup">
       Don't have an account?...
       <a href="signup.html" class="signup-btn">Sign Up</a>
     </div>
   </div>
+
+  <script>
+    // Retrieve registered user data from localStorage
+    const registeredUser = JSON.parse(localStorage.getItem('registeredUser')) || null;
+
+    document.getElementById('login-btn').addEventListener('click', function () {
+      // Get the entered username and password
+      const username = document.getElementById('login-username').value;
+      const password = document.getElementById('login-password').value;
+
+      // Validate the entered data against the registered user data
+      if (registeredUser && registeredUser.username === username && registeredUser.password === password) {
+        alert('Login successful!');
+        window.location.href = 'dashboard.html';
+      } else {
+        alert('Invalid username or password. Please try again.');
+      }
+    });
+  </script>
 </body>
 </html>
