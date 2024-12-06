@@ -37,7 +37,7 @@
             cursor: pointer;
         }
         .button.locked {
-            background-color: #add8e6;
+            background-color: gray;
             color: #fff;
         }
         .instructions {
