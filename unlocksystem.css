@@ -40,9 +40,8 @@ body {
     background-color: #669ACC;
     color: #fff;
 }
-.button.unlocked {
-    background-color: #add8e6;
-    color: #000;
+.button.locked:hover{
+  background-color: gray;
 }
 .instructions {
     margin-top: 20px;
