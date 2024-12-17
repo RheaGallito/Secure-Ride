@@ -76,9 +76,10 @@ body {
 }
 
 .signup-btn {
-  color: black;
+  background-color: #9bbad3;
+  color: #333;
   text-decoration: none;
-  border: 1px solid gray;
+  border: none;
   border-radius: 3px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   padding: 5px;
@@ -87,3 +88,4 @@ body {
   background-color: #489bdf;
   color: white;
 }
+
