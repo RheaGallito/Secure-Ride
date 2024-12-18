@@ -1,64 +1,60 @@
-function initMap() {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Ride</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="resetPassword.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="header">
+      SECURE
+      <span class="highlight">RIDE</span>
+    </div>
+    <div class="logo">
+      <img alt="Lock icon with a bicycle inside" src="asset/Rectangle 64.png" />
+    </div>
+    <input class="input-field" id="login-username" type="text" placeholder="Username" />
+    <input class="input-field" id="login-password" type="password" placeholder="Password" />
+    <a href="#" class="forgot-password" id="forgot-password-btn">Forgot Password</a>
+    <button class="login-btn" id="login-btn">LOGIN</button>
+    <div class="signup">
+      Don't have an account?...
+      <a href="signup.html" class="signup-btn">Sign Up</a>
+    </div>
+  </div>
 
-    //Location Marker
-    const markers = [
-        {
-        locationName: 'Crumbs & Dollies',
-        lat:  8.454579,
-        lng: 124.265113,
-        address: '1 Kingly Ct, <br> London,<br> W1B 5PW',
-        },
-        {
-            locationName: 'Gps Update',
-            lat: 8.224558,
-            lng: 124.235687,
-            address: '96 Bermondsey'
-        },
-       
-    ];
+  <!-- Modal for Forgot Password -->
+  <div id="forgotPasswordModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="close-modal">&times;</span>
+      <h2>Reset Password</h2>
+      <input class="input-field" id="new-password" type="password" placeholder="New Password" />
+      <button id="update-password-btn">Update Password</button>
+    </div>
+  </div>
 
-    const fehMarker =  'asset/gps.png'
-    const centerMap = { lat: 8.254579, lng:  124.265113};
-    const mapOptions = {
-        center: centerMap,
-        zoom: 20,
-        disbleDefault: true,
-    }
-    const map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
-    const infoWindow = new google.maps.InfoWindow({
-        minWidth: 200,
-        maxWidth: 200,
+  <script src="resetPasswordModal.js"></script> <!-- Link to the modal JS -->
+  <script>
+    // Retrieve registered user data from localStorage
+    const registeredUser = JSON.parse(localStorage.getItem('registeredUser')) || null;
+
+    document.getElementById('login-btn').addEventListener('click', function () {
+      // Get the entered username and password
+      const username = document.getElementById('login-username').value;
+      const password = document.getElementById('login-password').value;
+
+      // Validate the entered data against the registered user data
+      if (registeredUser && registeredUser.username === username && registeredUser.password === password) {
+        alert('Login successful!');
+        window.location.href = 'dashboard.html';
+      } else {
+        alert('Invalid username or password. Please try again.');
+      }
     });
-
-    function createInfoWindow(marker, infoWindowContent) {
-        google.maps.event.addListener(marker, 'click', function(){
-            infoWindow.setContent(infoWindowContent);
-            infoWindow.open(map, marker);
-        });
-    }
-
-    /**
-    * Loop through all markers
-    */
-    for (let i = 0; i < markers.length; i++) {
-        for (let i = 0; i < markers.length; i++) {
-            const marker = new google.maps.Marker({
-                position: { lat: markers[i]['lat'], lng: markers[i]['lng'] },
-                map: map,
-                icon: fehMarker
-            });
-        
-            const infoWindowContent = `
-                <div class="feh-content">
-                    <h3>${markers[i]['locationName']}</h3>
-                    <address>
-                        <p>${markers[i]['address']}</p>
-                    </address>
-                </div>
-            `;
-        
-            createInfoWindow(marker, infoWindowContent);
-        }
-    }
-      
-}
+  </script>
+</body>
+</html>
