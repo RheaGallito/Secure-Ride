@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notification</title>
+  <link rel="stylesheet" href="notification.css">
+</head>
+<body>
+ <div class="container">
+  <div class="header">
+   <h1>
+    Notifications
+   </h1>
+   <i class="fas fa-cog settings-icon">
+   </i>
+  </div>
+  <div class="notification">
+   <img alt="Lock icon with a bicycle" height="50" src="asset/Rectangle 64.png" width="50"/>
+   <div class="content">
+    <div class="title red">
+     Lockscreen Update
+    </div>
+    <div class="message">
+     Unlocked Improperly!!!
+    </div>
+    <div class="time">
+     Mon 1:17 AM
+    </div>
+   </div>
+  </div>
+  <div class="notification">
+   <img alt="Lock icon with a bicycle" height="50" src="asset/Rectangle 64.png" width="50"/>
+   <div class="content">
+    <div class="title">
+     Battery Update
+    </div>
+    <div class="message">
+     Health: Good
+     <br/>
+     Percentage: 100%
+    </div>
+    <div class="time">
+     Mon 1:17 AM
+    </div>
+   </div>
+  </div>
+ </div>
+ <script>
+     setInterval(function(){window.location.href = 'battery.html'},3000);
+ </script>
+</body>
+</html>
